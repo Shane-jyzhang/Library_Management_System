@@ -1,0 +1,22 @@
+.title{
+    text-align: center;
+    background-color: rgb(149, 216, 174);
+    height: 100px;
+    line-height: 50px;
+    font-size: 24px;
+}
+.content{
+    background-color: rgb(239, 239, 164);
+    border-right: 1px solid rgb(52, 52, 51);
+    border-bottom: 1px solid rgb(52, 52, 51);
+}
+.content table{
+    width: 100%;
+    text-align: center;
+}
+.content th,td{
+    border-left: 1px solid rgb(52, 52, 51);
+    border-top: 1px solid rgb(52, 52, 51);
+    height: 40px;
+    line-height: 40px;
+}

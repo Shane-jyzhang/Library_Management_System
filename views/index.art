@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab1</title>
+    <link rel="stylesheet" type="text/css" href="/www/style.css" />
+</head>
+<body>
+    <div class="title">Lab1<a href="/toAddBook"><br>addBook</a></div>
+    <div class="content">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>genre</th>
+                    <th>date</th>
+                    <th>author</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{each list}}
+                <tr>
+                    <td>{{$value.id}}</td>
+                    <td>{{$value.name}}</td>
+                    <td>{{$value.genre}}</td>
+                    <td>{{$value.date}}</td>
+                    <td>{{$value.author}}</td>
+
+                    <td><a href="/toEditBook?id={{$value.id}}">editBook</a>|<a href="/deleteBook?id={{$value.id}}">deleteBook</a></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

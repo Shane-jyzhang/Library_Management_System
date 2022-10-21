@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>addBook</title>
+    <!-- 内嵌式css样式 -->
+    <style type="text/css">
+    p{
+        text-align: center;  /*文本左对齐*/  
+        font-size: 20px;  /*字体大小 18 像素*/
+        line-height: 30px;  /*行高 25 像素*/
+    }
+    </style>
+
+</head>
+<body>
+    <form action="/addBook" method="post">
+        <p style="background-color:slategray">name:<input type="text" name="name"><br></p>
+        <p style="background-color:slategray">genre:<input type="text" name="genre"><br></p>
+        <p style="background-color:slategray">date:<input type="text" name="date"><br></p>
+        <p style="background-color:slategray">author:<input type="text" name="author"><br></p>
+        <p style="background-color:seagreen"><input type="submit" value="submit"><br></p>
+    </form>
+</body>
+</html>
