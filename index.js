@@ -9,7 +9,8 @@
  const app = express(); 
  const PORT = '3000';        
  //const PORT = process.env.PORT
- const HOSTNAME = '127.0.0.1';
+ //const HOSTNAME = 'https://jyz-app.herokuapp.com';
+ const HOSTNAME = "127.0.0.1";
  //const { hostname } = require('os');
  
  //启动静态资源服务，添加了一个虚拟路径/www
@@ -33,6 +34,6 @@
  //配置路由
  app.use(router);
  //监听端口
- app.listen(3000,()=>{
-     console.log('running... http://'+ HOSTNAME + ':' +PORT);
+ app.listen(PORT,()=>{
+     console.log('running... '+ "http://" + HOSTNAME + ":" + PORT);
  });
