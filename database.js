@@ -12,10 +12,10 @@ const mysql = require('mysql');
     else{
      //创建数据库链接
      var connection = mysql.createConnection({
-         host: 'eu-cdbr-west-03.cleardb.net',   //数据库所在的服务器的域名或者IP地址
-         user: 'b50e5ff55463da',      //登录数据库的账号
-         password: '6ab304a0',
-         database: 'heroku_c4e40a811638b4e'    //数据库的名称book,注意这里不是链接的名称，我创建的链接的名称为mybook
+         host: 'us-cdbr-east-06.cleardb.net',   //数据库所在的服务器的域名或者IP地址
+         user: 'b5b21746c93376',      //登录数据库的账号
+         password: 'b586aa42',
+         database: 'heroku_4501b27bc72ac60'    //数据库的名称book,注意这里不是链接的名称，我创建的链接的名称为mybook
      });
     }
      //执行连接操作

@@ -7,10 +7,10 @@
  const path = require('path');
  const router = require('./router.js');
  const app = express(); 
- const PORT = '3000';        
- //const PORT = process.env.PORT
+ //const PORT = '3000';        
+ const PORT = process.env.PORT || 3000;
  //const HOSTNAME = 'https://jyz-app.herokuapp.com';
- const HOSTNAME = "127.0.0.1";
+ //const HOSTNAME = "127.0.0.1";
  //const { hostname } = require('os');
  
  //启动静态资源服务，添加了一个虚拟路径/www
@@ -35,5 +35,6 @@
  app.use(router);
  //监听端口
  app.listen(PORT,()=>{
-     console.log('running... '+ "http://" + HOSTNAME + ":" + PORT);
+    console.log(PORT)
+     //console.log('running... '+ "http://" + HOSTNAME + ":" + PORT);
  });
